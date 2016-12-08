@@ -4,995 +4,997 @@
 <!-- Linux 4.4.0-47-generic #68-Ubuntu SMP Wed Oct 26 19:39:52 UTC 2016 x86_64 -->
 <!-- GNU libc 2 (glibc 2.23) -->
 <list>
-<node id="serv-dev" claimed="true" class="system" handle="DMI:0001">
- <description>Ordinateur de Bureau</description>
- <product>System Product Name</product>
- <vendor>System manufacturer</vendor>
- <version>System Version</version>
- <serial>System Serial Number</serial>
- <width units="bits">64</width>
- <configuration>
-  <setting id="boot" value="normal" />
-  <setting id="chassis" value="desktop" />
-  <setting id="uuid" value="E03907BE-9C7A-DA11-BAC2-001731A474D2" />
- </configuration>
- <capabilities>
-  <capability id="smbios-2.3" >SMBIOS version 2.3</capability>
-  <capability id="dmi-2.3" >DMI version 2.3</capability>
-  <capability id="vsyscall32" >processus 32 bits</capability>
- </capabilities>
-  <node id="core" claimed="true" class="bus" handle="DMI:0002">
-   <description>Carte mre</description>
-   <product>A8N8L</product>
-   <vendor>ASUSTek Computer INC.</vendor>
-   <physid>0</physid>
-   <version>1.xx</version>
-   <serial>123456789000</serial>
-    <node id="firmware" claimed="true" class="memory" handle="">
-     <description>BIOS</description>
-     <vendor>Phoenix Technologies, LTD</vendor>
-     <physid>0</physid>
-     <version>ASUS A8N8L ACPI BIOS Revision 0301 03/27/2006</version>
-     <date>03/27/2006</date>
-     <size units="bytes">131072</size>
-     <capacity units="bytes">458752</capacity>
-     <capabilities>
-      <capability id="pci" >bus PCI</capability>
-      <capability id="pnp" >Plug-and-Play</capability>
-      <capability id="apm" >Gestion d'nergie avance</capability>
-      <capability id="upgrade" >Le BIOS EEPROM peut tre mis  jour.</capability>
-      <capability id="shadowing" >BIOS shadowing</capability>
-      <capability id="cdboot" >Dmarrage depuis un CD-ROM/DVD</capability>
-      <capability id="bootselect" >Chemin de dmarrage slectionnable</capability>
-      <capability id="socketedrom" >BIOS ROM is socketed</capability>
-      <capability id="edd" >Extensions de disques dur avances</capability>
-      <capability id="int13floppy360" >Lecteur de disquettes 5,25&quot; 360 Ko</capability>
-      <capability id="int13floppy1200" >Lecteur de disquettes 5,25&quot; 1,2Mo</capability>
-      <capability id="int13floppy720" >Lecteur de disquettes 3,5&quot; 720 Ko</capability>
-      <capability id="int13floppy2880" >Lecteur de disquettes 3,5&quot; 2,88 Mo</capability>
-      <capability id="int5printscreen" >Touche d'impression cran</capability>
-      <capability id="int9keyboard" >controleur de clavier i8042</capability>
-      <capability id="int14serial" >INT14 serial line control</capability>
-      <capability id="int17printer" >contrle d'impression INT17</capability>
-      <capability id="int10video" >INT10 CGA/Mono vido</capability>
-      <capability id="acpi" >ACPI</capability>
-      <capability id="usb" >mulation USB</capability>
-      <capability id="ls120boot" >Dmarrage depuis LS-120</capability>
-      <capability id="zipboot" >Dmarrage depuis ATAPI ZIP</capability>
-      <capability id="biosbootspecification" >Spcifications de dmarrage du BIOS</capability>
-     </capabilities>
-    </node>
-    <node id="cpu:0" claimed="true" class="processor" handle="DMI:0004">
-     <description>CPU</description>
-     <product>AMD Athlon(tm) 64 Processor 3200+</product>
-     <vendor>Advanced Micro Devices [AMD]</vendor>
-     <physid>1</physid>
-     <businfo>cpu@0</businfo>
-     <version>AMD Athlon(tm) 64 Processor 3200+</version>
-     <slot>Socket 939</slot>
-     <size units="Hz">1000000000</size>
-     <capacity units="Hz">3700000000</capacity>
-     <width units="bits">64</width>
-     <clock units="Hz">201000000</clock>
-     <capabilities>
-      <capability id="fpu" >mathematical co-processor</capability>
-      <capability id="fpu_exception" >FPU exceptions reporting</capability>
-      <capability id="wp" />
-      <capability id="vme" >virtual mode extensions</capability>
-      <capability id="de" >debugging extensions</capability>
-      <capability id="pse" >page size extensions</capability>
-      <capability id="tsc" >time stamp counter</capability>
-      <capability id="msr" >model-specific registers</capability>
-      <capability id="pae" >4GB+ memory addressing (Physical Address Extension)</capability>
-      <capability id="mce" >machine check exceptions</capability>
-      <capability id="cx8" >compare and exchange 8-byte</capability>
-      <capability id="apic" >on-chip advanced programmable interrupt controller (APIC)</capability>
-      <capability id="sep" >fast system calls</capability>
-      <capability id="mtrr" >memory type range registers</capability>
-      <capability id="pge" >page global enable</capability>
-      <capability id="mca" >machine check architecture</capability>
-      <capability id="cmov" >conditional move instruction</capability>
-      <capability id="pat" >page attribute table</capability>
-      <capability id="pse36" >36-bit page size extensions</capability>
-      <capability id="clflush" />
-      <capability id="mmx" >multimedia extensions (MMX)</capability>
-      <capability id="fxsr" >fast floating point save/restore</capability>
-      <capability id="sse" >streaming SIMD extensions (SSE)</capability>
-      <capability id="sse2" >streaming SIMD extensions (SSE2)</capability>
-      <capability id="syscall" >fast system calls</capability>
-      <capability id="nx" >no-execute bit (NX)</capability>
-      <capability id="mmxext" >multimedia extensions (MMXExt)</capability>
-      <capability id="fxsr_opt" />
-      <capability id="x86-64" >64bits extensions (x86-64)</capability>
-      <capability id="3dnowext" >multimedia extensions (3DNow!Ext)</capability>
-      <capability id="3dnow" >multimedia extensions (3DNow!)</capability>
-      <capability id="rep_good" />
-      <capability id="nopl" />
-      <capability id="pni" />
-      <capability id="lahf_lm" />
-      <capability id="3dnowprefetch" />
-      <capability id="vmmcall" />
-      <capability id="cpufreq" >CPU Frequency scaling</capability>
-     </capabilities>
-      <node id="cache:0" claimed="true" class="memory" handle="DMI:0009">
-       <description>L1 cache</description>
-       <physid>9</physid>
-       <slot>L1 Cache</slot>
-       <size units="bytes">131072</size>
-       <capacity units="bytes">131072</capacity>
-       <configuration>
-        <setting id="level" value="1" />
-       </configuration>
-       <capabilities>
-        <capability id="synchronous" >Synchrone</capability>
-        <capability id="internal" >Interne</capability>
-        <capability id="write-back" >Rcrire</capability>
-        <capability id="data" >Cache de donnes</capability>
-       </capabilities>
-      </node>
-      <node id="cache:1" claimed="true" class="memory" handle="DMI:000B">
-       <description>L2 cache</description>
-       <physid>b</physid>
-       <slot>L2 Cache</slot>
-       <size units="bytes">524288</size>
-       <capacity units="bytes">524288</capacity>
-       <configuration>
-        <setting id="level" value="2" />
-       </configuration>
-       <capabilities>
-        <capability id="synchronous" >Synchrone</capability>
-        <capability id="internal" >Interne</capability>
-        <capability id="write-back" >Rcrire</capability>
-        <capability id="unified" >Cache unifi</capability>
-       </capabilities>
-      </node>
-    </node>
-    <node id="cpu:1" disabled="true" claimed="true" class="processor" handle="DMI:0005">
-     <description>CPU</description>
-     <vendor>Null</vendor>
-     <physid>4</physid>
-     <businfo>cpu@1</businfo>
-     <version>Null</version>
-     <slot>Socket 939</slot>
-    </node>
-    <node id="memory:0" claimed="true" class="memory" handle="DMI:002C">
-     <description>Mmoire Systme</description>
-     <physid>2c</physid>
-     <slot>Carte mre</slot>
-     <size units="bytes">1073741824</size>
-     <capacity units="bytes">2147483648</capacity>
-      <node id="bank:0" claimed="true" class="memory" handle="DMI:002D">
-       <description>DIMMProject-Id-Version: @(#) $Id$Report-Msgid-Bugs-To: POT-Creation-Date: 2009-10-08 14:02+0200PO-Revision-Date: 2016-06-24 06:52+0000Last-Translator: Lyonel Vincent &lt;Unknown&gt;Language-Team: MIME-Version: 1.0Content-Type: text/plain; charset=UTF-8Content-Transfer-Encoding: 8bitX-Launchpad-Export-Date: 2016-06-27 17:08+0000X-Generator: Launchpad (build 18115) 400 MHz (2,5 ns)</description>
-       <product>None</product>
-       <vendor>None</vendor>
-       <physid>0</physid>
-       <serial>None</serial>
-       <slot>A0</slot>
-       <size units="bytes">1073741824</size>
-       <width units="bits">64</width>
-       <clock units="Hz">400000000</clock>
-      </node>
-      <node id="bank:1" claimed="true" class="memory" handle="DMI:002E">
-       <description>DIMMProject-Id-Version: @(#) $Id$Report-Msgid-Bugs-To: POT-Creation-Date: 2009-10-08 14:02+0200PO-Revision-Date: 2016-06-24 06:52+0000Last-Translator: Lyonel Vincent &lt;Unknown&gt;Language-Team: MIME-Version: 1.0Content-Type: text/plain; charset=UTF-8Content-Transfer-Encoding: 8bitX-Launchpad-Export-Date: 2016-06-27 17:08+0000X-Generator: Launchpad (build 18115) [vide]</description>
-       <product>None</product>
-       <vendor>None</vendor>
-       <physid>1</physid>
-       <serial>None</serial>
-       <slot>A1</slot>
-       <width units="bits">64</width>
-      </node>
-    </node>
-    <node id="memory:1" class="memory" handle="PCI:0000:00:00.0">
-     <description>RAM memory</description>
-     <product>C51 Host Bridge</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>5</physid>
-     <businfo>pci@0000:00:00.0</businfo>
-     <version>a2</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="latency" value="0" />
-     </configuration>
-     <capabilities>
-      <capability id="ht" >HyperTransport</capability>
-      <capability id="bus_master" >bus mastering</capability>
-      <capability id="cap_list" >PCI capabilities listing</capability>
-     </capabilities>
-    </node>
-    <node id="memory:2" class="memory" handle="PCI:0000:00:00.1">
-     <description>RAM memory</description>
-     <product>C51 Memory Controller 0</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>0.1</physid>
-     <businfo>pci@0000:00:00.1</businfo>
-     <version>a2</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="latency" value="0" />
-     </configuration>
-    </node>
-    <node id="memory:3" class="memory" handle="PCI:0000:00:00.2">
-     <description>RAM memory</description>
-     <product>C51 Memory Controller 1</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>0.2</physid>
-     <businfo>pci@0000:00:00.2</businfo>
-     <version>a2</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="latency" value="0" />
-     </configuration>
-    </node>
-    <node id="memory:4" class="memory" handle="PCI:0000:00:00.3">
-     <description>RAM memory</description>
-     <product>C51 Memory Controller 5</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>0.3</physid>
-     <businfo>pci@0000:00:00.3</businfo>
-     <version>a2</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="latency" value="0" />
-     </configuration>
-    </node>
-    <node id="memory:5" class="memory" handle="PCI:0000:00:00.4">
-     <description>RAM memory</description>
-     <product>C51 Memory Controller 4</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>0.4</physid>
-     <businfo>pci@0000:00:00.4</businfo>
-     <version>a2</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="latency" value="0" />
-     </configuration>
-     <capabilities>
-      <capability id="bus_master" >bus mastering</capability>
-     </capabilities>
-    </node>
-    <node id="memory:6" class="memory" handle="PCI:0000:00:00.5">
-     <description>RAM memory</description>
-     <product>C51 Host Bridge</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>0.5</physid>
-     <businfo>pci@0000:00:00.5</businfo>
-     <version>a2</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="latency" value="0" />
-     </configuration>
-     <capabilities>
-      <capability id="bus_master" >bus mastering</capability>
-      <capability id="cap_list" >PCI capabilities listing</capability>
-     </capabilities>
-    </node>
-    <node id="memory:7" class="memory" handle="PCI:0000:00:00.6">
-     <description>RAM memory</description>
-     <product>C51 Memory Controller 3</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>0.6</physid>
-     <businfo>pci@0000:00:00.6</businfo>
-     <version>a2</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="latency" value="0" />
-     </configuration>
-    </node>
-    <node id="memory:8" class="memory" handle="PCI:0000:00:00.7">
-     <description>RAM memory</description>
-     <product>C51 Memory Controller 2</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>0.7</physid>
-     <businfo>pci@0000:00:00.7</businfo>
-     <version>a2</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="latency" value="0" />
-     </configuration>
-    </node>
-    <node id="pci:0" claimed="true" class="bridge" handle="PCIBUS:0000:01">
-     <description>PCI bridge</description>
-     <product>C51 PCI Express Bridge</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>2</physid>
-     <businfo>pci@0000:00:02.0</businfo>
-     <version>a1</version>
-     <width units="bits">32</width>
-     <clock units="Hz">33000000</clock>
-     <configuration>
-      <setting id="driver" value="pcieport" />
-     </configuration>
-     <capabilities>
-      <capability id="pci" />
-      <capability id="pm" >Power Management</capability>
-      <capability id="msi" >Message Signalled Interrupts</capability>
-      <capability id="ht" >HyperTransport</capability>
-      <capability id="pciexpress" >PCI Express</capability>
-      <capability id="normal_decode" />
-      <capability id="bus_master" >bus mastering</capability>
-      <capability id="cap_list" >PCI capabilities listing</capability>
-     </capabilities>
-     <resources>
-      <resource type="irq" value="24" />
-      <resource type="portE/S" value="e000(taille=4096)" />
-      <resource type="mémoire" value="fd700000-fd7fffff" />
-      <resource type="portE/S" value="fde00000(taille=1048576)" />
-     </resources>
-    </node>
-    <node id="pci:1" claimed="true" class="bridge" handle="PCIBUS:0000:02">
-     <description>PCI bridge</description>
-     <product>C51 PCI Express Bridge</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>3</physid>
-     <businfo>pci@0000:00:03.0</businfo>
-     <version>a1</version>
-     <width units="bits">32</width>
-     <clock units="Hz">33000000</clock>
-     <configuration>
-      <setting id="driver" value="pcieport" />
-     </configuration>
-     <capabilities>
-      <capability id="pci" />
-      <capability id="pm" >Power Management</capability>
-      <capability id="msi" >Message Signalled Interrupts</capability>
-      <capability id="ht" >HyperTransport</capability>
-      <capability id="pciexpress" >PCI Express</capability>
-      <capability id="normal_decode" />
-      <capability id="bus_master" >bus mastering</capability>
-      <capability id="cap_list" >PCI capabilities listing</capability>
-     </capabilities>
-     <resources>
-      <resource type="irq" value="25" />
-      <resource type="portE/S" value="d000(taille=4096)" />
-      <resource type="mémoire" value="fdd00000-fddfffff" />
-      <resource type="portE/S" value="fdc00000(taille=1048576)" />
-     </resources>
-    </node>
-    <node id="pci:2" claimed="true" class="bridge" handle="PCIBUS:0000:03">
-     <description>PCI bridge</description>
-     <product>C51 PCI Express Bridge</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>100</physid>
-     <businfo>pci@0000:00:04.0</businfo>
-     <version>a1</version>
-     <width units="bits">32</width>
-     <clock units="Hz">33000000</clock>
-     <configuration>
-      <setting id="driver" value="pcieport" />
-     </configuration>
-     <capabilities>
-      <capability id="pci" />
-      <capability id="pm" >Power Management</capability>
-      <capability id="msi" >Message Signalled Interrupts</capability>
-      <capability id="ht" >HyperTransport</capability>
-      <capability id="pciexpress" >PCI Express</capability>
-      <capability id="normal_decode" />
-      <capability id="bus_master" >bus mastering</capability>
-      <capability id="cap_list" >PCI capabilities listing</capability>
-     </capabilities>
-     <resources>
-      <resource type="irq" value="26" />
-      <resource type="portE/S" value="b000(taille=4096)" />
-      <resource type="mémoire" value="fd900000-fd9fffff" />
-      <resource type="portE/S" value="fd800000(taille=1048576)" />
-     </resources>
-    </node>
-    <node id="display" claimed="true" class="display" handle="PCI:0000:00:05.0">
-     <description>VGA compatible controller</description>
-     <product>C51PV [GeForce 6150]</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>6</physid>
-     <businfo>pci@0000:00:05.0</businfo>
-     <version>a2</version>
-     <width units="bits">64</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="driver" value="nouveau" />
-      <setting id="latency" value="0" />
-     </configuration>
-     <capabilities>
-      <capability id="pm" >Power Management</capability>
-      <capability id="msi" >Message Signalled Interrupts</capability>
-      <capability id="vga_controller" />
-      <capability id="bus_master" >bus mastering</capability>
-      <capability id="cap_list" >PCI capabilities listing</capability>
-      <capability id="rom" >extension ROM</capability>
-     </capabilities>
-     <resources>
-      <resource type="irq" value="16" />
-      <resource type="mémoire" value="fb000000-fbffffff" />
-      <resource type="mémoire" value="e0000000-efffffff" />
-      <resource type="mémoire" value="fc000000-fcffffff" />
-      <resource type="mémoire" value="40000000-4001ffff" />
-     </resources>
-    </node>
-    <node id="memory:9" class="memory" handle="PCI:0000:00:09.0">
-     <description>RAM memory</description>
-     <product>MCP51 Host Bridge</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>9</physid>
-     <businfo>pci@0000:00:09.0</businfo>
-     <version>a2</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="latency" value="0" />
-     </configuration>
-     <capabilities>
-      <capability id="ht" >HyperTransport</capability>
-      <capability id="bus_master" >bus mastering</capability>
-      <capability id="cap_list" >PCI capabilities listing</capability>
-     </capabilities>
-    </node>
-    <node id="isa" claimed="true" class="bridge" handle="PCI:0000:00:0a.0">
-     <description>ISA bridge</description>
-     <product>MCP51 LPC Bridge</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>a</physid>
-     <businfo>pci@0000:00:0a.0</businfo>
-     <version>a2</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="latency" value="0" />
-     </configuration>
-     <capabilities>
-      <capability id="isa" />
-      <capability id="bus_master" >bus mastering</capability>
-     </capabilities>
-    </node>
-    <node id="serial" claimed="true" class="bus" handle="PCI:0000:00:0a.1">
-     <description>SMBus</description>
-     <product>MCP51 SMBus</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>a.1</physid>
-     <businfo>pci@0000:00:0a.1</businfo>
-     <version>a2</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="driver" value="nForce2_smbus" />
-      <setting id="latency" value="0" />
-     </configuration>
-     <capabilities>
-      <capability id="pm" >Power Management</capability>
-      <capability id="cap_list" >PCI capabilities listing</capability>
-     </capabilities>
-     <resources>
-      <resource type="irq" value="10" />
-      <resource type="portE/S" value="400(taille=64)" />
-      <resource type="portE/S" value="440(taille=64)" />
-     </resources>
-    </node>
-    <node id="memory:10" class="memory" handle="PCI:0000:00:0a.2">
-     <description>RAM memory</description>
-     <product>MCP51 Memory Controller 0</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>a.2</physid>
-     <businfo>pci@0000:00:0a.2</businfo>
-     <version>a2</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="latency" value="0" />
-     </configuration>
-    </node>
-    <node id="usb:0" claimed="true" class="bus" handle="PCI:0000:00:0b.0">
-     <description>USB controller</description>
-     <product>MCP51 USB Controller</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>b</physid>
-     <businfo>pci@0000:00:0b.0</businfo>
-     <version>a2</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="driver" value="ohci-pci" />
-      <setting id="latency" value="0" />
-      <setting id="maxlatency" value="1" />
-      <setting id="mingnt" value="3" />
-     </configuration>
-     <capabilities>
-      <capability id="pm" >Power Management</capability>
-      <capability id="ohci" >Open Host Controller Interface</capability>
-      <capability id="bus_master" >bus mastering</capability>
-      <capability id="cap_list" >PCI capabilities listing</capability>
-     </capabilities>
-     <resources>
-      <resource type="irq" value="23" />
-      <resource type="mémoire" value="fe02f000-fe02ffff" />
-     </resources>
-      <node id="usbhost" claimed="true" class="bus" handle="USB:2:1">
-       <product>OHCI PCI host controller</product>
-       <vendor>Linux 4.4.0-47-generic ohci_hcd</vendor>
-       <physid>1</physid>
-       <businfo>usb@2</businfo>
-       <logicalname>usb2</logicalname>
-       <version>4.04</version>
-       <configuration>
-        <setting id="driver" value="hub" />
-        <setting id="slots" value="8" />
-        <setting id="speed" value="12Mbit/s" />
-       </configuration>
-       <capabilities>
-        <capability id="usb-1.10" >USB 1.1</capability>
-       </capabilities>
-      </node>
-    </node>
-    <node id="usb:1" claimed="true" class="bus" handle="PCI:0000:00:0b.1">
-     <description>USB controller</description>
-     <product>MCP51 USB Controller</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>b.1</physid>
-     <businfo>pci@0000:00:0b.1</businfo>
-     <version>a2</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="driver" value="ehci-pci" />
-      <setting id="latency" value="0" />
-      <setting id="maxlatency" value="1" />
-      <setting id="mingnt" value="3" />
-     </configuration>
-     <capabilities>
-      <capability id="debug" >Debug port</capability>
-      <capability id="pm" >Power Management</capability>
-      <capability id="ehci" >Enhanced Host Controller Interface (USB2)</capability>
-      <capability id="bus_master" >bus mastering</capability>
-      <capability id="cap_list" >PCI capabilities listing</capability>
-     </capabilities>
-     <resources>
-      <resource type="irq" value="22" />
-      <resource type="mémoire" value="fe02e000-fe02e0ff" />
-     </resources>
-      <node id="usbhost" claimed="true" class="bus" handle="USB:1:1">
-       <product>EHCI Host Controller</product>
-       <vendor>Linux 4.4.0-47-generic ehci_hcd</vendor>
-       <physid>1</physid>
-       <businfo>usb@1</businfo>
-       <logicalname>usb1</logicalname>
-       <version>4.04</version>
-       <configuration>
-        <setting id="driver" value="hub" />
-        <setting id="slots" value="8" />
-        <setting id="speed" value="480Mbit/s" />
-       </configuration>
-       <capabilities>
-        <capability id="usb-2.00" >USB 2.0</capability>
-       </capabilities>
-        <node id="usb" claimed="true" class="storage" handle="SCSI:04">
-         <description>Priphrique de stockage de masse</description>
-         <product>Flash Card Reader</product>
-         <vendor>ASUS</vendor>
-         <physid>7</physid>
-         <businfo>usb@1:7</businfo>
-         <logicalname>scsi4</logicalname>
-         <version>3.95</version>
-         <serial>000022272228</serial>
-         <configuration>
-          <setting id="driver" value="usb-storage" />
-          <setting id="maxpower" value="96mA" />
-          <setting id="speed" value="480Mbit/s" />
-         </configuration>
-         <capabilities>
-          <capability id="usb-2.00" >USB 2.0</capability>
-          <capability id="scsi" >SCSI</capability>
-          <capability id="emulated" >Emulated device</capability>
-          <capability id="scsi-host" >SCSI host adapter</capability>
-         </capabilities>
-          <node id="disk:0" claimed="true" class="disk" handle="SCSI:04:00:00:00">
-           <description>SCSI Disk</description>
-           <product>Flash HS-CF</product>
-           <vendor>ASUS</vendor>
-           <physid>0.0.0</physid>
-           <businfo>scsi@4:0.0.0</businfo>
-           <logicalname>/dev/sdb</logicalname>
-           <dev>8:16</dev>
-           <version>3.95</version>
-           <configuration>
-            <setting id="logicalsectorsize" value="512" />
-            <setting id="sectorsize" value="512" />
-           </configuration>
-           <capabilities>
-            <capability id="removable" >support is removable</capability>
-           </capabilities>
-            <node id="medium" claimed="true" class="disk" handle="">
-             <physid>0</physid>
-             <logicalname>/dev/sdb</logicalname>
-             <dev>8:16</dev>
+    <node id="serv-dev" claimed="true" class="system" handle="DMI:0001">
+        <description>Ordinateur de Bureau</description>
+        <product>System Product Name</product>
+        <vendor>System manufacturer</vendor>
+        <version>System Version</version>
+        <serial>System Serial Number</serial>
+        <width units="bits">64</width>
+        <configuration>
+            <setting id="boot" value="normal"/>
+            <setting id="chassis" value="desktop"/>
+            <setting id="uuid" value="E03907BE-9C7A-DA11-BAC2-001731A474D2"/>
+        </configuration>
+        <capabilities>
+            <capability id="smbios-2.3">SMBIOS version 2.3</capability>
+            <capability id="dmi-2.3">DMI version 2.3</capability>
+            <capability id="vsyscall32">processus 32 bits</capability>
+        </capabilities>
+        <node id="core" claimed="true" class="bus" handle="DMI:0002">
+            <description>Carte mre</description>
+            <product>A8N8L</product>
+            <vendor>ASUSTek Computer INC.</vendor>
+            <physid>0</physid>
+            <version>1.xx</version>
+            <serial>123456789000</serial>
+            <node id="firmware" claimed="true" class="memory" handle="">
+                <description>BIOS</description>
+                <vendor>Phoenix Technologies, LTD</vendor>
+                <physid>0</physid>
+                <version>ASUS A8N8L ACPI BIOS Revision 0301 03/27/2006</version>
+                <date>03/27/2006</date>
+                <size units="bytes">131072</size>
+                <capacity units="bytes">458752</capacity>
+                <capabilities>
+                    <capability id="pci">bus PCI</capability>
+                    <capability id="pnp">Plug-and-Play</capability>
+                    <capability id="apm">Gestion d'nergie avance</capability>
+                    <capability id="upgrade">Le BIOS EEPROM peut tre mis jour.</capability>
+                    <capability id="shadowing">BIOS shadowing</capability>
+                    <capability id="cdboot">Dmarrage depuis un CD-ROM/DVD</capability>
+                    <capability id="bootselect">Chemin de dmarrage slectionnable</capability>
+                    <capability id="socketedrom">BIOS ROM is socketed</capability>
+                    <capability id="edd">Extensions de disques dur avances</capability>
+                    <capability id="int13floppy360">Lecteur de disquettes 5,25&quot; 360 Ko</capability>
+                    <capability id="int13floppy1200">Lecteur de disquettes 5,25&quot; 1,2Mo</capability>
+                    <capability id="int13floppy720">Lecteur de disquettes 3,5&quot; 720 Ko</capability>
+                    <capability id="int13floppy2880">Lecteur de disquettes 3,5&quot; 2,88 Mo</capability>
+                    <capability id="int5printscreen">Touche d'impression cran</capability>
+                    <capability id="int9keyboard">controleur de clavier i8042</capability>
+                    <capability id="int14serial">INT14 serial line control</capability>
+                    <capability id="int17printer">contrle d'impression INT17</capability>
+                    <capability id="int10video">INT10 CGA/Mono vido</capability>
+                    <capability id="acpi">ACPI</capability>
+                    <capability id="usb">mulation USB</capability>
+                    <capability id="ls120boot">Dmarrage depuis LS-120</capability>
+                    <capability id="zipboot">Dmarrage depuis ATAPI ZIP</capability>
+                    <capability id="biosbootspecification">Spcifications de dmarrage du BIOS</capability>
+                </capabilities>
             </node>
-          </node>
-          <node id="disk:1" claimed="true" class="disk" handle="SCSI:04:00:00:01">
-           <description>SCSI Disk</description>
-           <product>Flash HS-COMBO</product>
-           <vendor>ASUS</vendor>
-           <physid>0.0.1</physid>
-           <businfo>scsi@4:0.0.1</businfo>
-           <logicalname>/dev/sdc</logicalname>
-           <dev>8:32</dev>
-           <version>3.95</version>
-           <configuration>
-            <setting id="logicalsectorsize" value="512" />
-            <setting id="sectorsize" value="512" />
-           </configuration>
-           <capabilities>
-            <capability id="removable" >support is removable</capability>
-           </capabilities>
-            <node id="medium" claimed="true" class="disk" handle="">
-             <physid>0</physid>
-             <logicalname>/dev/sdc</logicalname>
-             <dev>8:32</dev>
+            <node id="cpu:0" claimed="true" class="processor" handle="DMI:0004">
+                <description>CPU</description>
+                <product>AMD Athlon(tm) 64 Processor 3200+</product>
+                <vendor>Advanced Micro Devices [AMD]</vendor>
+                <physid>1</physid>
+                <businfo>cpu@0</businfo>
+                <version>AMD Athlon(tm) 64 Processor 3200+</version>
+                <slot>Socket 939</slot>
+                <size units="Hz">1000000000</size>
+                <capacity units="Hz">3700000000</capacity>
+                <width units="bits">64</width>
+                <clock units="Hz">201000000</clock>
+                <capabilities>
+                    <capability id="fpu">mathematical co-processor</capability>
+                    <capability id="fpu_exception">FPU exceptions reporting</capability>
+                    <capability id="wp"/>
+                    <capability id="vme">virtual mode extensions</capability>
+                    <capability id="de">debugging extensions</capability>
+                    <capability id="pse">page size extensions</capability>
+                    <capability id="tsc">time stamp counter</capability>
+                    <capability id="msr">model-specific registers</capability>
+                    <capability id="pae">4GB+ memory addressing (Physical Address Extension)</capability>
+                    <capability id="mce">machine check exceptions</capability>
+                    <capability id="cx8">compare and exchange 8-byte</capability>
+                    <capability id="apic">on-chip advanced programmable interrupt controller (APIC)</capability>
+                    <capability id="sep">fast system calls</capability>
+                    <capability id="mtrr">memory type range registers</capability>
+                    <capability id="pge">page global enable</capability>
+                    <capability id="mca">machine check architecture</capability>
+                    <capability id="cmov">conditional move instruction</capability>
+                    <capability id="pat">page attribute table</capability>
+                    <capability id="pse36">36-bit page size extensions</capability>
+                    <capability id="clflush"/>
+                    <capability id="mmx">multimedia extensions (MMX)</capability>
+                    <capability id="fxsr">fast floating point save/restore</capability>
+                    <capability id="sse">streaming SIMD extensions (SSE)</capability>
+                    <capability id="sse2">streaming SIMD extensions (SSE2)</capability>
+                    <capability id="syscall">fast system calls</capability>
+                    <capability id="nx">no-execute bit (NX)</capability>
+                    <capability id="mmxext">multimedia extensions (MMXExt)</capability>
+                    <capability id="fxsr_opt"/>
+                    <capability id="x86-64">64bits extensions (x86-64)</capability>
+                    <capability id="3dnowext">multimedia extensions (3DNow!Ext)</capability>
+                    <capability id="3dnow">multimedia extensions (3DNow!)</capability>
+                    <capability id="rep_good"/>
+                    <capability id="nopl"/>
+                    <capability id="pni"/>
+                    <capability id="lahf_lm"/>
+                    <capability id="3dnowprefetch"/>
+                    <capability id="vmmcall"/>
+                    <capability id="cpufreq">CPU Frequency scaling</capability>
+                </capabilities>
+                <node id="cache:0" claimed="true" class="memory" handle="DMI:0009">
+                    <description>L1 cache</description>
+                    <physid>9</physid>
+                    <slot>L1 Cache</slot>
+                    <size units="bytes">131072</size>
+                    <capacity units="bytes">131072</capacity>
+                    <configuration>
+                        <setting id="level" value="1"/>
+                    </configuration>
+                    <capabilities>
+                        <capability id="synchronous">Synchrone</capability>
+                        <capability id="internal">Interne</capability>
+                        <capability id="write-back">Rcrire</capability>
+                        <capability id="data">Cache de donnes</capability>
+                    </capabilities>
+                </node>
+                <node id="cache:1" claimed="true" class="memory" handle="DMI:000B">
+                    <description>L2 cache</description>
+                    <physid>b</physid>
+                    <slot>L2 Cache</slot>
+                    <size units="bytes">524288</size>
+                    <capacity units="bytes">524288</capacity>
+                    <configuration>
+                        <setting id="level" value="2"/>
+                    </configuration>
+                    <capabilities>
+                        <capability id="synchronous">Synchrone</capability>
+                        <capability id="internal">Interne</capability>
+                        <capability id="write-back">Rcrire</capability>
+                        <capability id="unified">Cache unifi</capability>
+                    </capabilities>
+                </node>
             </node>
-          </node>
+            <node id="cpu:1" disabled="true" claimed="true" class="processor" handle="DMI:0005">
+                <description>CPU</description>
+                <vendor>Null</vendor>
+                <physid>4</physid>
+                <businfo>cpu@1</businfo>
+                <version>Null</version>
+                <slot>Socket 939</slot>
+            </node>
+            <node id="memory:0" claimed="true" class="memory" handle="DMI:002C">
+                <description>Mmoire Systme</description>
+                <physid>2c</physid>
+                <slot>Carte mre</slot>
+                <size units="bytes">1073741824</size>
+                <capacity units="bytes">2147483648</capacity>
+                <node id="bank:0" claimed="true" class="memory" handle="DMI:002D">
+                    <description>DIMMProject-Id-Version: @(#) $Id$Report-Msgid-Bugs-To: POT-Creation-Date: 2009-10-08 14:02+0200PO-Revision-Date: 2016-06-24 06:52+0000Last-Translator: Lyonel Vincent &lt;Unknown&gt;Language-Team: MIME-Version: 1.0Content-Type:
+                        text/plain; charset=UTF-8Content-Transfer-Encoding: 8bitX-Launchpad-Export-Date: 2016-06-27 17:08+0000X-Generator: Launchpad (build 18115) 400 MHz (2,5 ns)</description>
+                    <product>None</product>
+                    <vendor>None</vendor>
+                    <physid>0</physid>
+                    <serial>None</serial>
+                    <slot>A0</slot>
+                    <size units="bytes">1073741824</size>
+                    <width units="bits">64</width>
+                    <clock units="Hz">400000000</clock>
+                </node>
+                <node id="bank:1" claimed="true" class="memory" handle="DMI:002E">
+                    <description>DIMMProject-Id-Version: @(#) $Id$Report-Msgid-Bugs-To: POT-Creation-Date: 2009-10-08 14:02+0200PO-Revision-Date: 2016-06-24 06:52+0000Last-Translator: Lyonel Vincent &lt;Unknown&gt;Language-Team: MIME-Version: 1.0Content-Type:
+                        text/plain; charset=UTF-8Content-Transfer-Encoding: 8bitX-Launchpad-Export-Date: 2016-06-27 17:08+0000X-Generator: Launchpad (build 18115) [vide]</description>
+                    <product>None</product>
+                    <vendor>None</vendor>
+                    <physid>1</physid>
+                    <serial>None</serial>
+                    <slot>A1</slot>
+                    <width units="bits">64</width>
+                </node>
+            </node>
+            <node id="memory:1" class="memory" handle="PCI:0000:00:00.0">
+                <description>RAM memory</description>
+                <product>C51 Host Bridge</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>5</physid>
+                <businfo>pci@0000:00:00.0</businfo>
+                <version>a2</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="latency" value="0"/>
+                </configuration>
+                <capabilities>
+                    <capability id="ht">HyperTransport</capability>
+                    <capability id="bus_master">bus mastering</capability>
+                    <capability id="cap_list">PCI capabilities listing</capability>
+                </capabilities>
+            </node>
+            <node id="memory:2" class="memory" handle="PCI:0000:00:00.1">
+                <description>RAM memory</description>
+                <product>C51 Memory Controller 0</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>0.1</physid>
+                <businfo>pci@0000:00:00.1</businfo>
+                <version>a2</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="latency" value="0"/>
+                </configuration>
+            </node>
+            <node id="memory:3" class="memory" handle="PCI:0000:00:00.2">
+                <description>RAM memory</description>
+                <product>C51 Memory Controller 1</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>0.2</physid>
+                <businfo>pci@0000:00:00.2</businfo>
+                <version>a2</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="latency" value="0"/>
+                </configuration>
+            </node>
+            <node id="memory:4" class="memory" handle="PCI:0000:00:00.3">
+                <description>RAM memory</description>
+                <product>C51 Memory Controller 5</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>0.3</physid>
+                <businfo>pci@0000:00:00.3</businfo>
+                <version>a2</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="latency" value="0"/>
+                </configuration>
+            </node>
+            <node id="memory:5" class="memory" handle="PCI:0000:00:00.4">
+                <description>RAM memory</description>
+                <product>C51 Memory Controller 4</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>0.4</physid>
+                <businfo>pci@0000:00:00.4</businfo>
+                <version>a2</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="latency" value="0"/>
+                </configuration>
+                <capabilities>
+                    <capability id="bus_master">bus mastering</capability>
+                </capabilities>
+            </node>
+            <node id="memory:6" class="memory" handle="PCI:0000:00:00.5">
+                <description>RAM memory</description>
+                <product>C51 Host Bridge</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>0.5</physid>
+                <businfo>pci@0000:00:00.5</businfo>
+                <version>a2</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="latency" value="0"/>
+                </configuration>
+                <capabilities>
+                    <capability id="bus_master">bus mastering</capability>
+                    <capability id="cap_list">PCI capabilities listing</capability>
+                </capabilities>
+            </node>
+            <node id="memory:7" class="memory" handle="PCI:0000:00:00.6">
+                <description>RAM memory</description>
+                <product>C51 Memory Controller 3</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>0.6</physid>
+                <businfo>pci@0000:00:00.6</businfo>
+                <version>a2</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="latency" value="0"/>
+                </configuration>
+            </node>
+            <node id="memory:8" class="memory" handle="PCI:0000:00:00.7">
+                <description>RAM memory</description>
+                <product>C51 Memory Controller 2</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>0.7</physid>
+                <businfo>pci@0000:00:00.7</businfo>
+                <version>a2</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="latency" value="0"/>
+                </configuration>
+            </node>
+            <node id="pci:0" claimed="true" class="bridge" handle="PCIBUS:0000:01">
+                <description>PCI bridge</description>
+                <product>C51 PCI Express Bridge</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>2</physid>
+                <businfo>pci@0000:00:02.0</businfo>
+                <version>a1</version>
+                <width units="bits">32</width>
+                <clock units="Hz">33000000</clock>
+                <configuration>
+                    <setting id="driver" value="pcieport"/>
+                </configuration>
+                <capabilities>
+                    <capability id="pci"/>
+                    <capability id="pm">Power Management</capability>
+                    <capability id="msi">Message Signalled Interrupts</capability>
+                    <capability id="ht">HyperTransport</capability>
+                    <capability id="pciexpress">PCI Express</capability>
+                    <capability id="normal_decode"/>
+                    <capability id="bus_master">bus mastering</capability>
+                    <capability id="cap_list">PCI capabilities listing</capability>
+                </capabilities>
+                <resources>
+                    <resource type="irq" value="24"/>
+                    <resource type="portE/S" value="e000(taille=4096)"/>
+                    <resource type="mémoire" value="fd700000-fd7fffff"/>
+                    <resource type="portE/S" value="fde00000(taille=1048576)"/>
+                </resources>
+            </node>
+            <node id="pci:1" claimed="true" class="bridge" handle="PCIBUS:0000:02">
+                <description>PCI bridge</description>
+                <product>C51 PCI Express Bridge</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>3</physid>
+                <businfo>pci@0000:00:03.0</businfo>
+                <version>a1</version>
+                <width units="bits">32</width>
+                <clock units="Hz">33000000</clock>
+                <configuration>
+                    <setting id="driver" value="pcieport"/>
+                </configuration>
+                <capabilities>
+                    <capability id="pci"/>
+                    <capability id="pm">Power Management</capability>
+                    <capability id="msi">Message Signalled Interrupts</capability>
+                    <capability id="ht">HyperTransport</capability>
+                    <capability id="pciexpress">PCI Express</capability>
+                    <capability id="normal_decode"/>
+                    <capability id="bus_master">bus mastering</capability>
+                    <capability id="cap_list">PCI capabilities listing</capability>
+                </capabilities>
+                <resources>
+                    <resource type="irq" value="25"/>
+                    <resource type="portE/S" value="d000(taille=4096)"/>
+                    <resource type="mémoire" value="fdd00000-fddfffff"/>
+                    <resource type="portE/S" value="fdc00000(taille=1048576)"/>
+                </resources>
+            </node>
+            <node id="pci:2" claimed="true" class="bridge" handle="PCIBUS:0000:03">
+                <description>PCI bridge</description>
+                <product>C51 PCI Express Bridge</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>100</physid>
+                <businfo>pci@0000:00:04.0</businfo>
+                <version>a1</version>
+                <width units="bits">32</width>
+                <clock units="Hz">33000000</clock>
+                <configuration>
+                    <setting id="driver" value="pcieport"/>
+                </configuration>
+                <capabilities>
+                    <capability id="pci"/>
+                    <capability id="pm">Power Management</capability>
+                    <capability id="msi">Message Signalled Interrupts</capability>
+                    <capability id="ht">HyperTransport</capability>
+                    <capability id="pciexpress">PCI Express</capability>
+                    <capability id="normal_decode"/>
+                    <capability id="bus_master">bus mastering</capability>
+                    <capability id="cap_list">PCI capabilities listing</capability>
+                </capabilities>
+                <resources>
+                    <resource type="irq" value="26"/>
+                    <resource type="portE/S" value="b000(taille=4096)"/>
+                    <resource type="mémoire" value="fd900000-fd9fffff"/>
+                    <resource type="portE/S" value="fd800000(taille=1048576)"/>
+                </resources>
+            </node>
+            <node id="display" claimed="true" class="display" handle="PCI:0000:00:05.0">
+                <description>VGA compatible controller</description>
+                <product>C51PV [GeForce 6150]</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>6</physid>
+                <businfo>pci@0000:00:05.0</businfo>
+                <version>a2</version>
+                <width units="bits">64</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="driver" value="nouveau"/>
+                    <setting id="latency" value="0"/>
+                </configuration>
+                <capabilities>
+                    <capability id="pm">Power Management</capability>
+                    <capability id="msi">Message Signalled Interrupts</capability>
+                    <capability id="vga_controller"/>
+                    <capability id="bus_master">bus mastering</capability>
+                    <capability id="cap_list">PCI capabilities listing</capability>
+                    <capability id="rom">extension ROM</capability>
+                </capabilities>
+                <resources>
+                    <resource type="irq" value="16"/>
+                    <resource type="mémoire" value="fb000000-fbffffff"/>
+                    <resource type="mémoire" value="e0000000-efffffff"/>
+                    <resource type="mémoire" value="fc000000-fcffffff"/>
+                    <resource type="mémoire" value="40000000-4001ffff"/>
+                </resources>
+            </node>
+            <node id="memory:9" class="memory" handle="PCI:0000:00:09.0">
+                <description>RAM memory</description>
+                <product>MCP51 Host Bridge</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>9</physid>
+                <businfo>pci@0000:00:09.0</businfo>
+                <version>a2</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="latency" value="0"/>
+                </configuration>
+                <capabilities>
+                    <capability id="ht">HyperTransport</capability>
+                    <capability id="bus_master">bus mastering</capability>
+                    <capability id="cap_list">PCI capabilities listing</capability>
+                </capabilities>
+            </node>
+            <node id="isa" claimed="true" class="bridge" handle="PCI:0000:00:0a.0">
+                <description>ISA bridge</description>
+                <product>MCP51 LPC Bridge</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>a</physid>
+                <businfo>pci@0000:00:0a.0</businfo>
+                <version>a2</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="latency" value="0"/>
+                </configuration>
+                <capabilities>
+                    <capability id="isa"/>
+                    <capability id="bus_master">bus mastering</capability>
+                </capabilities>
+            </node>
+            <node id="serial" claimed="true" class="bus" handle="PCI:0000:00:0a.1">
+                <description>SMBus</description>
+                <product>MCP51 SMBus</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>a.1</physid>
+                <businfo>pci@0000:00:0a.1</businfo>
+                <version>a2</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="driver" value="nForce2_smbus"/>
+                    <setting id="latency" value="0"/>
+                </configuration>
+                <capabilities>
+                    <capability id="pm">Power Management</capability>
+                    <capability id="cap_list">PCI capabilities listing</capability>
+                </capabilities>
+                <resources>
+                    <resource type="irq" value="10"/>
+                    <resource type="portE/S" value="400(taille=64)"/>
+                    <resource type="portE/S" value="440(taille=64)"/>
+                </resources>
+            </node>
+            <node id="memory:10" class="memory" handle="PCI:0000:00:0a.2">
+                <description>RAM memory</description>
+                <product>MCP51 Memory Controller 0</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>a.2</physid>
+                <businfo>pci@0000:00:0a.2</businfo>
+                <version>a2</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="latency" value="0"/>
+                </configuration>
+            </node>
+            <node id="usb:0" claimed="true" class="bus" handle="PCI:0000:00:0b.0">
+                <description>USB controller</description>
+                <product>MCP51 USB Controller</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>b</physid>
+                <businfo>pci@0000:00:0b.0</businfo>
+                <version>a2</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="driver" value="ohci-pci"/>
+                    <setting id="latency" value="0"/>
+                    <setting id="maxlatency" value="1"/>
+                    <setting id="mingnt" value="3"/>
+                </configuration>
+                <capabilities>
+                    <capability id="pm">Power Management</capability>
+                    <capability id="ohci">Open Host Controller Interface</capability>
+                    <capability id="bus_master">bus mastering</capability>
+                    <capability id="cap_list">PCI capabilities listing</capability>
+                </capabilities>
+                <resources>
+                    <resource type="irq" value="23"/>
+                    <resource type="mémoire" value="fe02f000-fe02ffff"/>
+                </resources>
+                <node id="usbhost" claimed="true" class="bus" handle="USB:2:1">
+                    <product>OHCI PCI host controller</product>
+                    <vendor>Linux 4.4.0-47-generic ohci_hcd</vendor>
+                    <physid>1</physid>
+                    <businfo>usb@2</businfo>
+                    <logicalname>usb2</logicalname>
+                    <version>4.04</version>
+                    <configuration>
+                        <setting id="driver" value="hub"/>
+                        <setting id="slots" value="8"/>
+                        <setting id="speed" value="12Mbit/s"/>
+                    </configuration>
+                    <capabilities>
+                        <capability id="usb-1.10">USB 1.1</capability>
+                    </capabilities>
+                </node>
+            </node>
+            <node id="usb:1" claimed="true" class="bus" handle="PCI:0000:00:0b.1">
+                <description>USB controller</description>
+                <product>MCP51 USB Controller</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>b.1</physid>
+                <businfo>pci@0000:00:0b.1</businfo>
+                <version>a2</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="driver" value="ehci-pci"/>
+                    <setting id="latency" value="0"/>
+                    <setting id="maxlatency" value="1"/>
+                    <setting id="mingnt" value="3"/>
+                </configuration>
+                <capabilities>
+                    <capability id="debug">Debug port</capability>
+                    <capability id="pm">Power Management</capability>
+                    <capability id="ehci">Enhanced Host Controller Interface (USB2)</capability>
+                    <capability id="bus_master">bus mastering</capability>
+                    <capability id="cap_list">PCI capabilities listing</capability>
+                </capabilities>
+                <resources>
+                    <resource type="irq" value="22"/>
+                    <resource type="mémoire" value="fe02e000-fe02e0ff"/>
+                </resources>
+                <node id="usbhost" claimed="true" class="bus" handle="USB:1:1">
+                    <product>EHCI Host Controller</product>
+                    <vendor>Linux 4.4.0-47-generic ehci_hcd</vendor>
+                    <physid>1</physid>
+                    <businfo>usb@1</businfo>
+                    <logicalname>usb1</logicalname>
+                    <version>4.04</version>
+                    <configuration>
+                        <setting id="driver" value="hub"/>
+                        <setting id="slots" value="8"/>
+                        <setting id="speed" value="480Mbit/s"/>
+                    </configuration>
+                    <capabilities>
+                        <capability id="usb-2.00">USB 2.0</capability>
+                    </capabilities>
+                    <node id="usb" claimed="true" class="storage" handle="SCSI:04">
+                        <description>Priphrique de stockage de masse</description>
+                        <product>Flash Card Reader</product>
+                        <vendor>ASUS</vendor>
+                        <physid>7</physid>
+                        <businfo>usb@1:7</businfo>
+                        <logicalname>scsi4</logicalname>
+                        <version>3.95</version>
+                        <serial>000022272228</serial>
+                        <configuration>
+                            <setting id="driver" value="usb-storage"/>
+                            <setting id="maxpower" value="96mA"/>
+                            <setting id="speed" value="480Mbit/s"/>
+                        </configuration>
+                        <capabilities>
+                            <capability id="usb-2.00">USB 2.0</capability>
+                            <capability id="scsi">SCSI</capability>
+                            <capability id="emulated">Emulated device</capability>
+                            <capability id="scsi-host">SCSI host adapter</capability>
+                        </capabilities>
+                        <node id="disk:0" claimed="true" class="disk" handle="SCSI:04:00:00:00">
+                            <description>SCSI Disk</description>
+                            <product>Flash HS-CF</product>
+                            <vendor>ASUS</vendor>
+                            <physid>0.0.0</physid>
+                            <businfo>scsi@4:0.0.0</businfo>
+                            <logicalname>/dev/sdb</logicalname>
+                            <dev>8:16</dev>
+                            <version>3.95</version>
+                            <configuration>
+                                <setting id="logicalsectorsize" value="512"/>
+                                <setting id="sectorsize" value="512"/>
+                            </configuration>
+                            <capabilities>
+                                <capability id="removable">support is removable</capability>
+                            </capabilities>
+                            <node id="medium" claimed="true" class="disk" handle="">
+                                <physid>0</physid>
+                                <logicalname>/dev/sdb</logicalname>
+                                <dev>8:16</dev>
+                            </node>
+                        </node>
+                        <node id="disk:1" claimed="true" class="disk" handle="SCSI:04:00:00:01">
+                            <description>SCSI Disk</description>
+                            <product>Flash HS-COMBO</product>
+                            <vendor>ASUS</vendor>
+                            <physid>0.0.1</physid>
+                            <businfo>scsi@4:0.0.1</businfo>
+                            <logicalname>/dev/sdc</logicalname>
+                            <dev>8:32</dev>
+                            <version>3.95</version>
+                            <configuration>
+                                <setting id="logicalsectorsize" value="512"/>
+                                <setting id="sectorsize" value="512"/>
+                            </configuration>
+                            <capabilities>
+                                <capability id="removable">support is removable</capability>
+                            </capabilities>
+                            <node id="medium" claimed="true" class="disk" handle="">
+                                <physid>0</physid>
+                                <logicalname>/dev/sdc</logicalname>
+                                <dev>8:32</dev>
+                            </node>
+                        </node>
+                    </node>
+                </node>
+            </node>
+            <node id="ide:0" claimed="true" class="storage" handle="PCI:0000:00:0d.0">
+                <description>IDE interface</description>
+                <product>MCP51 IDE</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>d</physid>
+                <businfo>pci@0000:00:0d.0</businfo>
+                <version>a1</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="driver" value="pata_amd"/>
+                    <setting id="latency" value="0"/>
+                    <setting id="maxlatency" value="1"/>
+                    <setting id="mingnt" value="3"/>
+                </configuration>
+                <capabilities>
+                    <capability id="ide"/>
+                    <capability id="pm">Power Management</capability>
+                    <capability id="bus_master">bus mastering</capability>
+                    <capability id="cap_list">PCI capabilities listing</capability>
+                </capabilities>
+                <resources>
+                    <resource type="irq" value="0"/>
+                    <resource type="portE/S" value="1f0(taille=8)"/>
+                    <resource type="portE/S" value="3f6"/>
+                    <resource type="portE/S" value="170(taille=8)"/>
+                    <resource type="portE/S" value="376"/>
+                    <resource type="portE/S" value="fd00(taille=16)"/>
+                </resources>
+            </node>
+            <node id="ide:1" claimed="true" class="storage" handle="PCI:0000:00:0e.0">
+                <description>IDE interface</description>
+                <product>MCP51 Serial ATA Controller</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>e</physid>
+                <businfo>pci@0000:00:0e.0</businfo>
+                <version>a1</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="driver" value="sata_nv"/>
+                    <setting id="latency" value="0"/>
+                    <setting id="maxlatency" value="1"/>
+                    <setting id="mingnt" value="3"/>
+                </configuration>
+                <capabilities>
+                    <capability id="ide"/>
+                    <capability id="pm">Power Management</capability>
+                    <capability id="msi">Message Signalled Interrupts</capability>
+                    <capability id="ht">HyperTransport</capability>
+                    <capability id="bus_master">bus mastering</capability>
+                    <capability id="cap_list">PCI capabilities listing</capability>
+                </capabilities>
+                <resources>
+                    <resource type="irq" value="21"/>
+                    <resource type="portE/S" value="9f0(taille=8)"/>
+                    <resource type="portE/S" value="bf0(taille=4)"/>
+                    <resource type="portE/S" value="970(taille=8)"/>
+                    <resource type="portE/S" value="b70(taille=4)"/>
+                    <resource type="portE/S" value="f800(taille=16)"/>
+                    <resource type="mémoire" value="fe02d000-fe02dfff"/>
+                </resources>
+            </node>
+            <node id="pci:3" claimed="true" class="bridge" handle="PCIBUS:0000:04">
+                <description>PCI bridge</description>
+                <product>MCP51 PCI Bridge</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>10</physid>
+                <businfo>pci@0000:00:10.0</businfo>
+                <version>a2</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <capabilities>
+                    <capability id="pci"/>
+                    <capability id="ht">HyperTransport</capability>
+                    <capability id="subtractive_decode"/>
+                    <capability id="bus_master">bus mastering</capability>
+                    <capability id="cap_list">PCI capabilities listing</capability>
+                </capabilities>
+                <resources>
+                    <resource type="portE/S" value="c000(taille=4096)"/>
+                    <resource type="mémoire" value="fdb00000-fdbfffff"/>
+                    <resource type="mémoire" value="fda00000-fdafffff"/>
+                </resources>
+                <node id="firewire" claimed="true" class="bus" handle="PCI:0000:04:03.0">
+                    <description>FireWire (IEEE 1394)</description>
+                    <product>VT6306/7/8 [Fire II(M)] IEEE 1394 OHCI Controller</product>
+                    <vendor>VIA Technologies, Inc.</vendor>
+                    <physid>3</physid>
+                    <businfo>pci@0000:04:03.0</businfo>
+                    <version>80</version>
+                    <width units="bits">32</width>
+                    <clock units="Hz">33000000</clock>
+                    <configuration>
+                        <setting id="driver" value="firewire_ohci"/>
+                        <setting id="latency" value="32"/>
+                        <setting id="maxlatency" value="32"/>
+                    </configuration>
+                    <capabilities>
+                        <capability id="pm">Power Management</capability>
+                        <capability id="ohci">Open Host Controller Interface</capability>
+                        <capability id="bus_master">bus mastering</capability>
+                        <capability id="cap_list">PCI capabilities listing</capability>
+                    </capabilities>
+                    <resources>
+                        <resource type="irq" value="19"/>
+                        <resource type="mémoire" value="fdbff000-fdbff7ff"/>
+                        <resource type="portE/S" value="cf00(taille=128)"/>
+                    </resources>
+                </node>
+            </node>
+            <node id="multimedia" claimed="true" class="multimedia" handle="PCI:0000:00:10.1">
+                <description>Audio device</description>
+                <product>MCP51 High Definition Audio</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>10.1</physid>
+                <businfo>pci@0000:00:10.1</businfo>
+                <version>a2</version>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="driver" value="snd_hda_intel"/>
+                    <setting id="latency" value="0"/>
+                    <setting id="maxlatency" value="5"/>
+                    <setting id="mingnt" value="2"/>
+                </configuration>
+                <capabilities>
+                    <capability id="pm">Power Management</capability>
+                    <capability id="msi">Message Signalled Interrupts</capability>
+                    <capability id="ht">HyperTransport</capability>
+                    <capability id="bus_master">bus mastering</capability>
+                    <capability id="cap_list">PCI capabilities listing</capability>
+                </capabilities>
+                <resources>
+                    <resource type="irq" value="23"/>
+                    <resource type="mémoire" value="fe028000-fe02bfff"/>
+                </resources>
+            </node>
+            <node id="bridge" claimed="true" class="bridge" handle="PCI:0000:00:14.0">
+                <description>Ethernet interface</description>
+                <product>MCP51 Ethernet Controller</product>
+                <vendor>NVIDIA Corporation</vendor>
+                <physid>14</physid>
+                <businfo>pci@0000:00:14.0</businfo>
+                <logicalname>eth0</logicalname>
+                <version>a1</version>
+                <serial>00:17:31:a4:74:d2</serial>
+                <size>1000000000</size>
+                <capacity>1000000000</capacity>
+                <width units="bits">32</width>
+                <clock units="Hz">66000000</clock>
+                <configuration>
+                    <setting id="autonegotiation" value="on"/>
+                    <setting id="broadcast" value="yes"/>
+                    <setting id="driver" value="forcedeth"/>
+                    <setting id="driverversion" value="0.64"/>
+                    <setting id="duplex" value="full"/>
+                    <setting id="ip" value="10.0.0.22"/>
+                    <setting id="latency" value="0"/>
+                    <setting id="link" value="yes"/>
+                    <setting id="maxlatency" value="20"/>
+                    <setting id="mingnt" value="1"/>
+                    <setting id="multicast" value="yes"/>
+                    <setting id="port" value="MII"/>
+                    <setting id="speed" value="1Gbit/s"/>
+                </configuration>
+                <capabilities>
+                    <capability id="bridge"/>
+                    <capability id="pm">Power Management</capability>
+                    <capability id="bus_master">bus mastering</capability>
+                    <capability id="cap_list">PCI capabilities listing</capability>
+                    <capability id="ethernet"/>
+                    <capability id="physical">Interface physique</capability>
+                    <capability id="mii">Media Independent Interface</capability>
+                    <capability id="10bt">10 Mbit/s</capability>
+                    <capability id="10bt-fd">10 Mbit/s (bidirectionnel)</capability>
+                    <capability id="100bt">100 Mbit/s</capability>
+                    <capability id="100bt-fd">100 Mbit/s (bidirectionnel)</capability>
+                    <capability id="1000bt-fd">1 Gbit/s (bidirectionnel)</capability>
+                    <capability id="autonegotiation">Auto-ngotiation</capability>
+                </capabilities>
+                <resources>
+                    <resource type="irq" value="20"/>
+                    <resource type="mémoire" value="fe02c000-fe02cfff"/>
+                    <resource type="portE/S" value="f700(taille=8)"/>
+                </resources>
+            </node>
+            <node id="pci:4" claimed="true" class="bridge" handle="PCIBUS:0000:00">
+                <description>Host bridge</description>
+                <product>K8 [Athlon64/Opteron] HyperTransport Technology Configuration</product>
+                <vendor>Advanced Micro Devices, Inc. [AMD]</vendor>
+                <physid>101</physid>
+                <businfo>pci@0000:00:18.0</businfo>
+                <version>00</version>
+                <width units="bits">32</width>
+                <clock units="Hz">33000000</clock>
+            </node>
+            <node id="pci:5" claimed="true" class="bridge" handle="PCIBUS:0000:00">
+                <description>Host bridge</description>
+                <product>K8 [Athlon64/Opteron] Address Map</product>
+                <vendor>Advanced Micro Devices, Inc. [AMD]</vendor>
+                <physid>102</physid>
+                <businfo>pci@0000:00:18.1</businfo>
+                <version>00</version>
+                <width units="bits">32</width>
+                <clock units="Hz">33000000</clock>
+            </node>
+            <node id="pci:6" claimed="true" class="bridge" handle="PCIBUS:0000:00">
+                <description>Host bridge</description>
+                <product>K8 [Athlon64/Opteron] DRAM Controller</product>
+                <vendor>Advanced Micro Devices, Inc. [AMD]</vendor>
+                <physid>103</physid>
+                <businfo>pci@0000:00:18.2</businfo>
+                <version>00</version>
+                <width units="bits">32</width>
+                <clock units="Hz">33000000</clock>
+            </node>
+            <node id="pci:7" claimed="true" class="bridge" handle="PCIBUS:0000:00">
+                <description>Host bridge</description>
+                <product>K8 [Athlon64/Opteron] Miscellaneous Control</product>
+                <vendor>Advanced Micro Devices, Inc. [AMD]</vendor>
+                <physid>104</physid>
+                <businfo>pci@0000:00:18.3</businfo>
+                <version>00</version>
+                <width units="bits">32</width>
+                <clock units="Hz">33000000</clock>
+                <configuration>
+                    <setting id="driver" value="k8temp"/>
+                </configuration>
+                <resources>
+                    <resource type="irq" value="0"/>
+                </resources>
+            </node>
+            <node id="scsi:0" claimed="true" class="storage" handle="">
+                <physid>7</physid>
+                <logicalname>scsi0</logicalname>
+                <capabilities>
+                    <capability id="emulated">Emulated device</capability>
+                </capabilities>
+                <node id="cdrom" claimed="true" class="disk" handle="SCSI:00:00:00:00">
+                    <description>DVD-RAM writer</description>
+                    <product>DRW-1608P3S</product>
+                    <vendor>ASUS</vendor>
+                    <physid>0.0.0</physid>
+                    <businfo>scsi@0:0.0.0</businfo>
+                    <logicalname>/dev/cdrom</logicalname>
+                    <logicalname>/dev/cdrw</logicalname>
+                    <logicalname>/dev/dvd</logicalname>
+                    <logicalname>/dev/dvdrw</logicalname>
+                    <logicalname>/dev/sr0</logicalname>
+                    <dev>11:0</dev>
+                    <version>1.19</version>
+                    <configuration>
+                        <setting id="ansiversion" value="5"/>
+                        <setting id="status" value="nodisc"/>
+                    </configuration>
+                    <capabilities>
+                        <capability id="removable">support is removable</capability>
+                        <capability id="audio">Audio CD playback</capability>
+                        <capability id="cd-r">CD-R burning</capability>
+                        <capability id="cd-rw">CD-RW burning</capability>
+                        <capability id="dvd">DVD playback</capability>
+                        <capability id="dvd-r">DVD-R burning</capability>
+                        <capability id="dvd-ram">DVD-RAM burning</capability>
+                    </capabilities>
+                </node>
+            </node>
+            <node id="scsi:1" claimed="true" class="storage" handle="">
+                <physid>8</physid>
+                <logicalname>scsi2</logicalname>
+                <capabilities>
+                    <capability id="emulated">Emulated device</capability>
+                </capabilities>
+                <node id="disk" claimed="true" class="disk" handle="SCSI:02:00:00:00">
+                    <description>ATA Disk</description>
+                    <product>ST380811AS</product>
+                    <vendor>Seagate</vendor>
+                    <physid>0.0.0</physid>
+                    <businfo>scsi@2:0.0.0</businfo>
+                    <logicalname>/dev/sda</logicalname>
+                    <dev>8:0</dev>
+                    <version>E</version>
+                    <serial>5PS0ZWJ8</serial>
+                    <size units="bytes">80026361856</size>
+                    <configuration>
+                        <setting id="ansiversion" value="5"/>
+                        <setting id="logicalsectorsize" value="512"/>
+                        <setting id="sectorsize" value="512"/>
+                        <setting id="signature" value="0005bb8b"/>
+                    </configuration>
+                    <capabilities>
+                        <capability id="partitioned">Partitioned disk</capability>
+                        <capability id="partitioned:dos">MS-DOS partition table</capability>
+                    </capabilities>
+                    <node id="volume:0" claimed="true" class="volume" handle="">
+                        <description>Volume EXT4</description>
+                        <vendor>Linux</vendor>
+                        <physid>1</physid>
+                        <businfo>scsi@2:0.0.0,1</businfo>
+                        <logicalname>/dev/sda1</logicalname>
+                        <logicalname>/</logicalname>
+                        <dev>8:1</dev>
+                        <version>1.0</version>
+                        <serial>28680dff-1ea5-474e-9d41-187caba3d8e6</serial>
+                        <size units="bytes">78987132928</size>
+                        <capacity>78987132928</capacity>
+                        <configuration>
+                            <setting id="created" value="2015-07-24 14:21:05"/>
+                            <setting id="filesystem" value="ext4"/>
+                            <setting id="lastmountpoint" value="/"/>
+                            <setting id="modified" value="2016-11-23 10:08:53"/>
+                            <setting id="mount.fstype" value="ext4"/>
+                            <setting id="mount.options" value="rw,relatime,errors=remount-ro,data=ordered"/>
+                            <setting id="mounted" value="2016-11-23 10:09:03"/>
+                            <setting id="state" value="mounted"/>
+                        </configuration>
+                        <capabilities>
+                            <capability id="primary">Primary partition</capability>
+                            <capability id="bootable">Bootable partition (active)</capability>
+                            <capability id="journaled"/>
+                            <capability id="extended_attributes">Attributs tendus</capability>
+                            <capability id="large_files">Fichiers de plus de 4 Go</capability>
+                            <capability id="huge_files">Fichiers de plus de 16 To</capability>
+                            <capability id="dir_nlink">Rpertoires avec plus de 65000 sous-rpertoires</capability>
+                            <capability id="recover">ncessite rcupration</capability>
+                            <capability id="extents">extent-based allocation</capability>
+                            <capability id="ext4"/>
+                            <capability id="ext2">EXT2/EXT3</capability>
+                            <capability id="initialized">volume initialis</capability>
+                        </capabilities>
+                    </node>
+                    <node id="volume:1" claimed="true" class="volume" handle="">
+                        <description>Extended partition</description>
+                        <physid>2</physid>
+                        <businfo>scsi@2:0.0.0,2</businfo>
+                        <logicalname>/dev/sda2</logicalname>
+                        <dev>8:2</dev>
+                        <size units="bytes">1037042688</size>
+                        <capacity>1037042688</capacity>
+                        <capabilities>
+                            <capability id="primary">Primary partition</capability>
+                            <capability id="extended">Extended partition</capability>
+                            <capability id="partitioned">Partitioned disk</capability>
+                            <capability id="partitioned:extended">Extended partition</capability>
+                        </capabilities>
+                        <node id="logicalvolume" claimed="true" class="volume" handle="">
+                            <description>Linux swap / Solaris partition</description>
+                            <physid>5</physid>
+                            <logicalname>/dev/sda5</logicalname>
+                            <dev>8:5</dev>
+                            <capacity>1037041664</capacity>
+                            <capabilities>
+                                <capability id="nofs">No filesystem</capability>
+                            </capabilities>
+                        </node>
+                    </node>
+                </node>
+            </node>
         </node>
-      </node>
     </node>
-    <node id="ide:0" claimed="true" class="storage" handle="PCI:0000:00:0d.0">
-     <description>IDE interface</description>
-     <product>MCP51 IDE</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>d</physid>
-     <businfo>pci@0000:00:0d.0</businfo>
-     <version>a1</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="driver" value="pata_amd" />
-      <setting id="latency" value="0" />
-      <setting id="maxlatency" value="1" />
-      <setting id="mingnt" value="3" />
-     </configuration>
-     <capabilities>
-      <capability id="ide" />
-      <capability id="pm" >Power Management</capability>
-      <capability id="bus_master" >bus mastering</capability>
-      <capability id="cap_list" >PCI capabilities listing</capability>
-     </capabilities>
-     <resources>
-      <resource type="irq" value="0" />
-      <resource type="portE/S" value="1f0(taille=8)" />
-      <resource type="portE/S" value="3f6" />
-      <resource type="portE/S" value="170(taille=8)" />
-      <resource type="portE/S" value="376" />
-      <resource type="portE/S" value="fd00(taille=16)" />
-     </resources>
-    </node>
-    <node id="ide:1" claimed="true" class="storage" handle="PCI:0000:00:0e.0">
-     <description>IDE interface</description>
-     <product>MCP51 Serial ATA Controller</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>e</physid>
-     <businfo>pci@0000:00:0e.0</businfo>
-     <version>a1</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="driver" value="sata_nv" />
-      <setting id="latency" value="0" />
-      <setting id="maxlatency" value="1" />
-      <setting id="mingnt" value="3" />
-     </configuration>
-     <capabilities>
-      <capability id="ide" />
-      <capability id="pm" >Power Management</capability>
-      <capability id="msi" >Message Signalled Interrupts</capability>
-      <capability id="ht" >HyperTransport</capability>
-      <capability id="bus_master" >bus mastering</capability>
-      <capability id="cap_list" >PCI capabilities listing</capability>
-     </capabilities>
-     <resources>
-      <resource type="irq" value="21" />
-      <resource type="portE/S" value="9f0(taille=8)" />
-      <resource type="portE/S" value="bf0(taille=4)" />
-      <resource type="portE/S" value="970(taille=8)" />
-      <resource type="portE/S" value="b70(taille=4)" />
-      <resource type="portE/S" value="f800(taille=16)" />
-      <resource type="mémoire" value="fe02d000-fe02dfff" />
-     </resources>
-    </node>
-    <node id="pci:3" claimed="true" class="bridge" handle="PCIBUS:0000:04">
-     <description>PCI bridge</description>
-     <product>MCP51 PCI Bridge</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>10</physid>
-     <businfo>pci@0000:00:10.0</businfo>
-     <version>a2</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <capabilities>
-      <capability id="pci" />
-      <capability id="ht" >HyperTransport</capability>
-      <capability id="subtractive_decode" />
-      <capability id="bus_master" >bus mastering</capability>
-      <capability id="cap_list" >PCI capabilities listing</capability>
-     </capabilities>
-     <resources>
-      <resource type="portE/S" value="c000(taille=4096)" />
-      <resource type="mémoire" value="fdb00000-fdbfffff" />
-      <resource type="mémoire" value="fda00000-fdafffff" />
-     </resources>
-      <node id="firewire" claimed="true" class="bus" handle="PCI:0000:04:03.0">
-       <description>FireWire (IEEE 1394)</description>
-       <product>VT6306/7/8 [Fire II(M)] IEEE 1394 OHCI Controller</product>
-       <vendor>VIA Technologies, Inc.</vendor>
-       <physid>3</physid>
-       <businfo>pci@0000:04:03.0</businfo>
-       <version>80</version>
-       <width units="bits">32</width>
-       <clock units="Hz">33000000</clock>
-       <configuration>
-        <setting id="driver" value="firewire_ohci" />
-        <setting id="latency" value="32" />
-        <setting id="maxlatency" value="32" />
-       </configuration>
-       <capabilities>
-        <capability id="pm" >Power Management</capability>
-        <capability id="ohci" >Open Host Controller Interface</capability>
-        <capability id="bus_master" >bus mastering</capability>
-        <capability id="cap_list" >PCI capabilities listing</capability>
-       </capabilities>
-       <resources>
-        <resource type="irq" value="19" />
-        <resource type="mémoire" value="fdbff000-fdbff7ff" />
-        <resource type="portE/S" value="cf00(taille=128)" />
-       </resources>
-      </node>
-    </node>
-    <node id="multimedia" claimed="true" class="multimedia" handle="PCI:0000:00:10.1">
-     <description>Audio device</description>
-     <product>MCP51 High Definition Audio</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>10.1</physid>
-     <businfo>pci@0000:00:10.1</businfo>
-     <version>a2</version>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="driver" value="snd_hda_intel" />
-      <setting id="latency" value="0" />
-      <setting id="maxlatency" value="5" />
-      <setting id="mingnt" value="2" />
-     </configuration>
-     <capabilities>
-      <capability id="pm" >Power Management</capability>
-      <capability id="msi" >Message Signalled Interrupts</capability>
-      <capability id="ht" >HyperTransport</capability>
-      <capability id="bus_master" >bus mastering</capability>
-      <capability id="cap_list" >PCI capabilities listing</capability>
-     </capabilities>
-     <resources>
-      <resource type="irq" value="23" />
-      <resource type="mémoire" value="fe028000-fe02bfff" />
-     </resources>
-    </node>
-    <node id="bridge" claimed="true" class="bridge" handle="PCI:0000:00:14.0">
-     <description>Ethernet interface</description>
-     <product>MCP51 Ethernet Controller</product>
-     <vendor>NVIDIA Corporation</vendor>
-     <physid>14</physid>
-     <businfo>pci@0000:00:14.0</businfo>
-     <logicalname>eth0</logicalname>
-     <version>a1</version>
-     <serial>00:17:31:a4:74:d2</serial>
-     <size>1000000000</size>
-     <capacity>1000000000</capacity>
-     <width units="bits">32</width>
-     <clock units="Hz">66000000</clock>
-     <configuration>
-      <setting id="autonegotiation" value="on" />
-      <setting id="broadcast" value="yes" />
-      <setting id="driver" value="forcedeth" />
-      <setting id="driverversion" value="0.64" />
-      <setting id="duplex" value="full" />
-      <setting id="ip" value="10.0.0.22" />
-      <setting id="latency" value="0" />
-      <setting id="link" value="yes" />
-      <setting id="maxlatency" value="20" />
-      <setting id="mingnt" value="1" />
-      <setting id="multicast" value="yes" />
-      <setting id="port" value="MII" />
-      <setting id="speed" value="1Gbit/s" />
-     </configuration>
-     <capabilities>
-      <capability id="bridge" />
-      <capability id="pm" >Power Management</capability>
-      <capability id="bus_master" >bus mastering</capability>
-      <capability id="cap_list" >PCI capabilities listing</capability>
-      <capability id="ethernet" />
-      <capability id="physical" >Interface physique</capability>
-      <capability id="mii" >Media Independent Interface</capability>
-      <capability id="10bt" >10 Mbit/s</capability>
-      <capability id="10bt-fd" >10 Mbit/s (bidirectionnel)</capability>
-      <capability id="100bt" >100 Mbit/s</capability>
-      <capability id="100bt-fd" >100 Mbit/s (bidirectionnel)</capability>
-      <capability id="1000bt-fd" >1 Gbit/s (bidirectionnel)</capability>
-      <capability id="autonegotiation" >Auto-ngotiation</capability>
-     </capabilities>
-     <resources>
-      <resource type="irq" value="20" />
-      <resource type="mémoire" value="fe02c000-fe02cfff" />
-      <resource type="portE/S" value="f700(taille=8)" />
-     </resources>
-    </node>
-    <node id="pci:4" claimed="true" class="bridge" handle="PCIBUS:0000:00">
-     <description>Host bridge</description>
-     <product>K8 [Athlon64/Opteron] HyperTransport Technology Configuration</product>
-     <vendor>Advanced Micro Devices, Inc. [AMD]</vendor>
-     <physid>101</physid>
-     <businfo>pci@0000:00:18.0</businfo>
-     <version>00</version>
-     <width units="bits">32</width>
-     <clock units="Hz">33000000</clock>
-    </node>
-    <node id="pci:5" claimed="true" class="bridge" handle="PCIBUS:0000:00">
-     <description>Host bridge</description>
-     <product>K8 [Athlon64/Opteron] Address Map</product>
-     <vendor>Advanced Micro Devices, Inc. [AMD]</vendor>
-     <physid>102</physid>
-     <businfo>pci@0000:00:18.1</businfo>
-     <version>00</version>
-     <width units="bits">32</width>
-     <clock units="Hz">33000000</clock>
-    </node>
-    <node id="pci:6" claimed="true" class="bridge" handle="PCIBUS:0000:00">
-     <description>Host bridge</description>
-     <product>K8 [Athlon64/Opteron] DRAM Controller</product>
-     <vendor>Advanced Micro Devices, Inc. [AMD]</vendor>
-     <physid>103</physid>
-     <businfo>pci@0000:00:18.2</businfo>
-     <version>00</version>
-     <width units="bits">32</width>
-     <clock units="Hz">33000000</clock>
-    </node>
-    <node id="pci:7" claimed="true" class="bridge" handle="PCIBUS:0000:00">
-     <description>Host bridge</description>
-     <product>K8 [Athlon64/Opteron] Miscellaneous Control</product>
-     <vendor>Advanced Micro Devices, Inc. [AMD]</vendor>
-     <physid>104</physid>
-     <businfo>pci@0000:00:18.3</businfo>
-     <version>00</version>
-     <width units="bits">32</width>
-     <clock units="Hz">33000000</clock>
-     <configuration>
-      <setting id="driver" value="k8temp" />
-     </configuration>
-     <resources>
-      <resource type="irq" value="0" />
-     </resources>
-    </node>
-    <node id="scsi:0" claimed="true" class="storage" handle="">
-     <physid>7</physid>
-     <logicalname>scsi0</logicalname>
-     <capabilities>
-      <capability id="emulated" >Emulated device</capability>
-     </capabilities>
-      <node id="cdrom" claimed="true" class="disk" handle="SCSI:00:00:00:00">
-       <description>DVD-RAM writer</description>
-       <product>DRW-1608P3S</product>
-       <vendor>ASUS</vendor>
-       <physid>0.0.0</physid>
-       <businfo>scsi@0:0.0.0</businfo>
-       <logicalname>/dev/cdrom</logicalname>
-       <logicalname>/dev/cdrw</logicalname>
-       <logicalname>/dev/dvd</logicalname>
-       <logicalname>/dev/dvdrw</logicalname>
-       <logicalname>/dev/sr0</logicalname>
-       <dev>11:0</dev>
-       <version>1.19</version>
-       <configuration>
-        <setting id="ansiversion" value="5" />
-        <setting id="status" value="nodisc" />
-       </configuration>
-       <capabilities>
-        <capability id="removable" >support is removable</capability>
-        <capability id="audio" >Audio CD playback</capability>
-        <capability id="cd-r" >CD-R burning</capability>
-        <capability id="cd-rw" >CD-RW burning</capability>
-        <capability id="dvd" >DVD playback</capability>
-        <capability id="dvd-r" >DVD-R burning</capability>
-        <capability id="dvd-ram" >DVD-RAM burning</capability>
-       </capabilities>
-      </node>
-    </node>
-    <node id="scsi:1" claimed="true" class="storage" handle="">
-     <physid>8</physid>
-     <logicalname>scsi2</logicalname>
-     <capabilities>
-      <capability id="emulated" >Emulated device</capability>
-     </capabilities>
-      <node id="disk" claimed="true" class="disk" handle="SCSI:02:00:00:00">
-       <description>ATA Disk</description>
-       <product>ST380811AS</product>
-       <vendor>Seagate</vendor>
-       <physid>0.0.0</physid>
-       <businfo>scsi@2:0.0.0</businfo>
-       <logicalname>/dev/sda</logicalname>
-       <dev>8:0</dev>
-       <version>E</version>
-       <serial>5PS0ZWJ8</serial>
-       <size units="bytes">80026361856</size>
-       <configuration>
-        <setting id="ansiversion" value="5" />
-        <setting id="logicalsectorsize" value="512" />
-        <setting id="sectorsize" value="512" />
-        <setting id="signature" value="0005bb8b" />
-       </configuration>
-       <capabilities>
-        <capability id="partitioned" >Partitioned disk</capability>
-        <capability id="partitioned:dos" >MS-DOS partition table</capability>
-       </capabilities>
-        <node id="volume:0" claimed="true" class="volume" handle="">
-         <description>Volume EXT4</description>
-         <vendor>Linux</vendor>
-         <physid>1</physid>
-         <businfo>scsi@2:0.0.0,1</businfo>
-         <logicalname>/dev/sda1</logicalname>
-         <logicalname>/</logicalname>
-         <dev>8:1</dev>
-         <version>1.0</version>
-         <serial>28680dff-1ea5-474e-9d41-187caba3d8e6</serial>
-         <size units="bytes">78987132928</size>
-         <capacity>78987132928</capacity>
-         <configuration>
-          <setting id="created" value="2015-07-24 14:21:05" />
-          <setting id="filesystem" value="ext4" />
-          <setting id="lastmountpoint" value="/" />
-          <setting id="modified" value="2016-11-23 10:08:53" />
-          <setting id="mount.fstype" value="ext4" />
-          <setting id="mount.options" value="rw,relatime,errors=remount-ro,data=ordered" />
-          <setting id="mounted" value="2016-11-23 10:09:03" />
-          <setting id="state" value="mounted" />
-         </configuration>
-         <capabilities>
-          <capability id="primary" >Primary partition</capability>
-          <capability id="bootable" >Bootable partition (active)</capability>
-          <capability id="journaled" />
-          <capability id="extended_attributes" >Attributs tendus</capability>
-          <capability id="large_files" >Fichiers de plus de 4 Go</capability>
-          <capability id="huge_files" >Fichiers de plus de 16 To</capability>
-          <capability id="dir_nlink" >Rpertoires avec plus de 65000 sous-rpertoires</capability>
-          <capability id="recover" >ncessite rcupration</capability>
-          <capability id="extents" >extent-based allocation</capability>
-          <capability id="ext4" />
-          <capability id="ext2" >EXT2/EXT3</capability>
-          <capability id="initialized" >volume initialis</capability>
-         </capabilities>
-        </node>
-        <node id="volume:1" claimed="true" class="volume" handle="">
-         <description>Extended partition</description>
-         <physid>2</physid>
-         <businfo>scsi@2:0.0.0,2</businfo>
-         <logicalname>/dev/sda2</logicalname>
-         <dev>8:2</dev>
-         <size units="bytes">1037042688</size>
-         <capacity>1037042688</capacity>
-         <capabilities>
-          <capability id="primary" >Primary partition</capability>
-          <capability id="extended" >Extended partition</capability>
-          <capability id="partitioned" >Partitioned disk</capability>
-          <capability id="partitioned:extended" >Extended partition</capability>
-         </capabilities>
-          <node id="logicalvolume" claimed="true" class="volume" handle="">
-           <description>Linux swap / Solaris partition</description>
-           <physid>5</physid>
-           <logicalname>/dev/sda5</logicalname>
-           <dev>8:5</dev>
-           <capacity>1037041664</capacity>
-           <capabilities>
-            <capability id="nofs" >No filesystem</capability>
-           </capabilities>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-</node>
 </list>

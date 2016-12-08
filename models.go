@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 type Emplacement struct {
 	Batiment  int
 	salle     int
@@ -11,10 +15,18 @@ type UnitValue struct {
 	Unit  string
 }
 
+func (u UnitValue) String() string {
+	return fmt.Sprintf("%d|%s", u.Value, u.Unit)
+}
+
 type Cpu struct {
 	Version string
 	Size    UnitValue
 	Clock   UnitValue
+}
+
+func (c Cpu) String() string {
+	return fmt.Sprintf("Version: %s, Size: %s, Clock: %s", c.Version, c.Size, c.Clock)
 }
 
 type Memory struct {
