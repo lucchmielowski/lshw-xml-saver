@@ -1,5 +1,5 @@
 package main
 
 func main() {
-	CreateServerFromXML("Serveur-Kimsufi")
+	SaveServerFromXML("Serveur-1")
 }

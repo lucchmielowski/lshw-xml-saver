@@ -26,7 +26,7 @@ type Cpu struct {
 }
 
 func (c Cpu) String() string {
-	return fmt.Sprintf("Version: %s, Size: %s, Clock: %s", c.Version, c.Size, c.Clock)
+	return fmt.Sprintf("Version: %s, Size: %s, Clock: %s\n", c.Version, c.Size, c.Clock)
 }
 
 type Memory struct {
@@ -34,9 +34,17 @@ type Memory struct {
 	Banks     []Bank
 }
 
+func (m Memory) String() string {
+	return fmt.Sprintf("TotalSize: %s, Banks: %s\n", m.TotalSize, m.Banks)
+}
+
 type Bank struct {
 	Description string
 	Size        UnitValue
+}
+
+func (b Bank) String() string {
+	return fmt.Sprintf("Description: %s, Size: %s\n", b.Description, b.Size)
 }
 
 type Display struct {

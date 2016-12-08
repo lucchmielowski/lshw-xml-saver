@@ -20,6 +20,7 @@ type Node struct {
 	Version     string     `xml:"version"`
 	Clock       []UnitElmt `xml:"clock"`
 	Size        []UnitElmt `xml:"size"`
+	Width       []UnitElmt `xml:"width"`
 	Disabled    bool       `xml:"disabled,attr"`
 	Description string     `xml:"description"`
 	Product     string     `xml:"product"`
@@ -46,12 +47,13 @@ func (u UnitElmt) toUnitValue() UnitValue {
 }
 
 func (n Node) String() string {
-	return fmt.Sprintf("\n%s.%s { Version: %s,\n Clock: %s,\n Size: %s,\n Description: %s,\n Product: %s,\n Vendor: %s,\n Serial: %s,\n Businfo: %s,\n Disabled: %t }\n",
+	return fmt.Sprintf("\n%s.%s { Version: %s,\n Clock: %s,\n Size: %s,\n Width: %s,\n Description: %s,\n Product: %s,\n Vendor: %s,\n Serial: %s,\n Businfo: %s,\n Disabled: %t }\n",
 		n.Id,
 		n.Class,
 		n.Version,
 		n.Clock,
 		n.Size,
+		n.Width,
 		n.Description,
 		n.Product,
 		n.Vendor,
@@ -96,20 +98,8 @@ func FilterMatchingNodes(n []Node, p string) []Node {
 	return nc
 }
 
-func GenerateCpusFromXML(n []Node) {
-	var p []Node
-	//c := make([]Cpu, 0)
-	FindNodesByClass(n, "processor", &p)
-	p = FilterDisabledNodes(p)
-	fmt.Println(p)
-	for _, node := range p {
-		tempCpu := Cpu{Version: node.Version, Size: node.Size[0].toUnitValue(), Clock: node.Clock[0].toUnitValue()}
-		fmt.Println(tempCpu)
-	}
-}
-
 func FilterDisabledNodes(n []Node) []Node {
-	nc := make([]Node, 0)
+	var nc []Node
 	for _, node := range n {
 		if !node.Disabled {
 			nc = append(nc, node)
@@ -118,7 +108,7 @@ func FilterDisabledNodes(n []Node) []Node {
 	return nc
 }
 
-func CreateServerFromXML(serverName string) {
+func SaveServerFromXML(serverName string) {
 	xmlFile, err := os.Open(fmt.Sprintf("files/%s/%s-ALL-XML.xml", serverName, serverName))
 	if err != nil {
 		fmt.Println("Error opening file:", err)
@@ -130,7 +120,8 @@ func CreateServerFromXML(serverName string) {
 	var q Query
 	xml.Unmarshal(b, &q)
 	//fmt.Println(q)
-	GenerateCpusFromXML(q.Nodes)
+	//GenerateCpusFromNodes(q.Nodes)
+	GenerateMemoryFromNodes(q.Nodes)
 	//FindNodesByClass(q.Nodes, "memory", &r)
 	//fmt.Println(FilterMatchingNodes(r, "bank"))
 }
