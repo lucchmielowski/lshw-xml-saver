@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/xml"
 	"fmt"
+	"gopkg.in/mgo.v2"
 	"io/ioutil"
 	"os"
 	"regexp"
@@ -109,6 +110,12 @@ func FilterDisabledNodes(n []Node) []Node {
 }
 
 func SaveServerFromXML(serverName string) {
+	db, err := mgo.Dial("localhost")
+	if err != nil {
+		panic(err)
+	}
+	defer db.Close()
+
 	xmlFile, err := os.Open(fmt.Sprintf("files/%s/%s-ALL-XML.xml", serverName, serverName))
 	if err != nil {
 		fmt.Println("Error opening file:", err)
@@ -120,4 +127,5 @@ func SaveServerFromXML(serverName string) {
 	var q Query
 	xml.Unmarshal(b, &q)
 	s := GenerateServerFromNodes(serverName, q.Nodes)
+	saveServer(s, db)
 }
