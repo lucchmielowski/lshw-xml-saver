@@ -1,5 +1,14 @@
 package main
 
+import (
+	"io/ioutil"
+)
+
 func main() {
-	SaveServerFromXML("Serveur-1")
+	files, _ := ioutil.ReadDir("files")
+
+	for _, f := range files {
+		SaveServerFromXML(f.Name())
+	}
+
 }

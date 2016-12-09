@@ -6,8 +6,8 @@ import (
 
 type Emplacement struct {
 	Batiment  int
-	salle     int
-	autreInfo string
+	Salle     int
+	AutreInfo string
 }
 
 type UnitValue struct {
@@ -52,19 +52,45 @@ type Display struct {
 	Product     string
 }
 
+func (d Display) String() string {
+	return fmt.Sprintf("Description: %s\n, Product: %s\n", d.Description, d.Product)
+}
+
 type Disk struct {
 	Description string
 	Product     string
 	Vendor      string
+	Size        UnitValue
 	BusInfo     string
-	serial      string
+	Serial      string
+}
+
+func (d Disk) String() string {
+	return fmt.Sprintf("Description: %s\n, Product: %s\n, Size: %s\n, Vendor: %s\n, BusInfo: %s\n, Serial: %s\n",
+		d.Description,
+		d.Product,
+		d.Size,
+		d.Vendor,
+		d.BusInfo,
+		d.Serial,
+	)
 }
 
 type Server struct {
-	Name        string
-	Emplacement Emplacement
-	Cpus        []Cpu
-	Memories    []Memory
-	Displays    []Display
-	Disks       []Disk
+	Name string
+	//Emplacement Emplacement
+	Cpus     []Cpu
+	Memories []Memory
+	Displays []Display
+	Disks    []Disk
+}
+
+func (s Server) String() string {
+	return fmt.Sprintf("Name: %s,\n Cpus: %s,\n Memories: %s,\n Displays: %s,\n, Disks: %s,\n",
+		s.Name,
+		s.Cpus,
+		s.Memories,
+		s.Displays,
+		s.Disks,
+	)
 }

@@ -11,11 +11,6 @@ func getAllServers(s *mgo.Session) {
 
 }
 
-func findServerById(id string, s *mgo.Session) {
-	session := s.Copy()
-	defer session.Close()
-}
-
 func saveServer(serv Server, s *mgo.Session) {
 	session := s.Copy()
 	defer session.Close()

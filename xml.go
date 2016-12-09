@@ -119,9 +119,5 @@ func SaveServerFromXML(serverName string) {
 
 	var q Query
 	xml.Unmarshal(b, &q)
-	//fmt.Println(q)
-	//GenerateCpusFromNodes(q.Nodes)
-	GenerateMemoryFromNodes(q.Nodes)
-	//FindNodesByClass(q.Nodes, "memory", &r)
-	//fmt.Println(FilterMatchingNodes(r, "bank"))
+	s := GenerateServerFromNodes(serverName, q.Nodes)
 }
