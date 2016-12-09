@@ -109,14 +109,14 @@ func FilterDisabledNodes(n []Node) []Node {
 	return nc
 }
 
-func SaveServerFromXML(serverName string) {
+func SaveServerFromXML(path, serverName string) {
 	db, err := mgo.Dial("localhost")
 	if err != nil {
 		panic(err)
 	}
 	defer db.Close()
 
-	xmlFile, err := os.Open(fmt.Sprintf("files/%s/%s-ALL-XML.xml", serverName, serverName))
+	xmlFile, err := os.Open(fmt.Sprintf("%s/%s/%s-ALL-XML.xml", path, serverName, serverName))
 	if err != nil {
 		fmt.Println("Error opening file:", err)
 	}
