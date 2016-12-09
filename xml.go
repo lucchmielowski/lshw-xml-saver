@@ -109,7 +109,7 @@ func FilterDisabledNodes(n []Node) []Node {
 	return nc
 }
 
-func SaveServerFromXML(path, serverName string) {
+func SaveServerFromXML(path, serverName, dbName string) {
 	db, err := mgo.Dial("localhost")
 	if err != nil {
 		panic(err)
@@ -127,5 +127,5 @@ func SaveServerFromXML(path, serverName string) {
 	var q Query
 	xml.Unmarshal(b, &q)
 	s := GenerateServerFromNodes(serverName, q.Nodes)
-	saveServer(s, db)
+	saveServer(s, db, dbName)
 }

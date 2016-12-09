@@ -5,17 +5,15 @@ import (
 	"gopkg.in/mgo.v2"
 )
 
-const DB_NAME = "xml-test"
-
 func getAllServers(s *mgo.Session) {
 
 }
 
-func saveServer(serv Server, s *mgo.Session) {
+func saveServer(serv Server, s *mgo.Session, dbName string) {
 	session := s.Copy()
 	defer session.Close()
 
-	c := session.DB(DB_NAME).C("servers")
+	c := session.DB(dbName).C("servers")
 
 	err := c.Insert(serv)
 	if err != nil {

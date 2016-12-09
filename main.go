@@ -7,13 +7,14 @@ import (
 
 func main() {
 
-	directoryPtr := flag.String("dir", "./files", "Path du dossier contenant tout les sous-dossiers de serveurs")
+	directoryPtr := flag.String("dir", "./files", "Path to the directory containing all servers sub-directories")
+	dbPtr := flag.String("db", "lshw-xml", "Database name")
 	flag.Parse()
 
 	files, _ := ioutil.ReadDir(*directoryPtr)
 
 	for _, f := range files {
-		SaveServerFromXML(*directoryPtr, f.Name())
+		SaveServerFromXML(*directoryPtr, f.Name(), *dbPtr)
 	}
 
 }
