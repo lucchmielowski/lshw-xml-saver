@@ -3,18 +3,21 @@ package main
 import (
 	"encoding/xml"
 	"fmt"
-	"gopkg.in/mgo.v2"
 	"io/ioutil"
 	"os"
 	"regexp"
 	"strconv"
+
+	"gopkg.in/mgo.v2"
 )
 
+// UnitElmt is a tupple representing value/unit combination
 type UnitElmt struct {
 	Value string `xml:",chardata"`
 	Unit  string `xml:"units,attr"`
 }
 
+// Node represents every xml <node> element
 type Node struct {
 	Id          string     `xml:"id,attr"`
 	Class       string     `xml:"class,attr"`
@@ -31,6 +34,7 @@ type Node struct {
 	ChildNodes  []Node     `xml:"node"`
 }
 
+// Query represents the first node from which the xml is parsed
 type Query struct {
 	Nodes []Node `xml:"node>node>node"`
 }
@@ -64,6 +68,7 @@ func (n Node) String() string {
 	)
 }
 
+// FindNodesByClass recursively filter a list of given nodes by their class
 func FindNodesByClass(n []Node, c string, r *[]Node) {
 	for i := 0; i < len(n); i++ {
 		elmt := n[i]
@@ -74,6 +79,7 @@ func FindNodesByClass(n []Node, c string, r *[]Node) {
 	}
 }
 
+// FindNodeById get every nodes and make an recursive deep search
 func FindNodeById(n []Node, id string) Node {
 	for i := 0; i < len(n); i++ {
 		elmt := n[i]
@@ -88,6 +94,7 @@ func FindNodeById(n []Node, id string) Node {
 	return Node{}
 }
 
+// FilterMatchingNodes filter nodes ID's by the string passed as parameter
 func FilterMatchingNodes(n []Node, p string) []Node {
 	nc := make([]Node, 0)
 	r, _ := regexp.Compile(p)
@@ -99,6 +106,7 @@ func FilterMatchingNodes(n []Node, p string) []Node {
 	return nc
 }
 
+// FilterDisabledNodes filters nodes which are marked as disabled in XML
 func FilterDisabledNodes(n []Node) []Node {
 	var nc []Node
 	for _, node := range n {
@@ -109,6 +117,7 @@ func FilterDisabledNodes(n []Node) []Node {
 	return nc
 }
 
+// SaveServerFromXML parses XML files and saves results in DB
 func SaveServerFromXML(path, serverName, dbName string) {
 	db, err := mgo.Dial("localhost")
 	if err != nil {
@@ -120,6 +129,7 @@ func SaveServerFromXML(path, serverName, dbName string) {
 	if err != nil {
 		fmt.Println("Error opening file:", err)
 	}
+	//fmt.Printf("SERVER: %s", serverName)
 	defer xmlFile.Close()
 
 	b, _ := ioutil.ReadAll(xmlFile)

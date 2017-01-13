@@ -14,7 +14,10 @@ func main() {
 	files, _ := ioutil.ReadDir(*directoryPtr)
 
 	for _, f := range files {
-		SaveServerFromXML(*directoryPtr, f.Name(), *dbPtr)
+		// Needed to avoid MacOS .DS_Store file to be saved
+		if f.Name() != ".DS_Store" {
+			SaveServerFromXML(*directoryPtr, f.Name(), *dbPtr)
+		}
 	}
 
 }

@@ -1,23 +1,22 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
+// handleEmptyUnitElmt  returns an empty UnitValues if the unit/value is not found
 func handleEmptyUnitElmt(u []UnitElmt) UnitValue {
 	if len(u) > 0 {
 		return u[0].toUnitValue()
-	} else {
-		return UnitValue{}
 	}
+	return UnitValue{}
 }
 
+// GenerateCpusFromNodes generates CPU elements for a server from XML Nodes
 func GenerateCpusFromNodes(n []Node) []Cpu {
 	var p []Node
 	var c []Cpu
 
 	FindNodesByClass(n, "processor", &p)
-	p = FilterDisabledNodes(n)
+	// p = FilterDisabledNodes(n)
 	for _, node := range p {
 		tempCpu := Cpu{Version: node.Version, Size: handleEmptyUnitElmt(node.Size), Clock: handleEmptyUnitElmt(node.Clock)}
 		c = append(c, tempCpu)
@@ -25,21 +24,23 @@ func GenerateCpusFromNodes(n []Node) []Cpu {
 	return c
 }
 
+// GenerateBankFromXml generates Memory.banks from XML Nodes
 func GenerateBankFromXml(n []Node) []Bank {
-	var b []Node
-	b = FilterDisabledNodes(n)
+	// var b []Node
+	// b = FilterDisabledNodes(n)
 	var banks []Bank
-	for _, node := range b {
+	for _, node := range n {
 		banks = append(banks, Bank{Description: node.Description, Size: handleEmptyUnitElmt(node.Size)})
 	}
 	return banks
 }
 
+// GenerateMemoryFromNodes generates memory elements from XML Nodes
 func GenerateMemoryFromNodes(n []Node) []Memory {
 	var m []Node
 	FindNodesByClass(n, "memory", &m)
 	var mem []Memory
-	m = FilterDisabledNodes(FilterMatchingNodes(m, "memory"))
+	m = FilterMatchingNodes(m, "memory")
 	for _, node := range m {
 		tempMemory := Memory{TotalSize: handleEmptyUnitElmt(node.Size), Banks: make([]Bank, 0)}
 		if len(node.ChildNodes) > 0 {
@@ -51,6 +52,7 @@ func GenerateMemoryFromNodes(n []Node) []Memory {
 	return mem
 }
 
+// GenerateDiskFromNodes generates disks from XML Nodes
 func GenerateDiskFromNodes(n []Node) []Disk {
 	var s []Node
 	FindNodesByClass(n, "disk", &s)
@@ -71,6 +73,7 @@ func GenerateDiskFromNodes(n []Node) []Disk {
 	return d
 }
 
+// GenerateDisplayFromNodes generates the display elements for the given XMLNode
 func GenerateDisplayFromNodes(n []Node) []Display {
 	var d []Node
 	var disp []Display
@@ -85,6 +88,7 @@ func GenerateDisplayFromNodes(n []Node) []Display {
 	return disp
 }
 
+// GenerateServerFromNodes uses other generators to generate a full server conf from XML nodes
 func GenerateServerFromNodes(name string, n []Node) Server {
 	newServer := Server{
 		Name:     name,
